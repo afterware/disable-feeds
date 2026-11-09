@@ -1,9 +1,12 @@
 <?php
 /*
-Plugin Name: Disable Feeds
+Plugin Name: Disable Feeds — Afterware
 Plugin URI: https://wordpress.org/plugins/disable-feeds/
+Update URI: https://updates.afterware.io/disable-feeds
 Description: Disable all RSS/Atom feeds on your WordPress site.
-Version: 1.4.4
+Version: 1.4.4.1
+Requires PHP: 8.3.28
+Requires at least: 6.8.3
 Author: Samir Shah, BBpress support by Matthew Sigley
 Author URI: http://rayofsolaris.net/
 License: GPLv2 or later
@@ -117,7 +120,7 @@ class Disable_Feeds {
 
 		if( $this->redirect_status() == 'on' ) {
 			if( isset( $_GET['feed'] ) ) {
-				wp_redirect( esc_url_raw( remove_query_arg( 'feed' ) ), 301 );
+				wp_safe_redirect( esc_url_raw( remove_query_arg( 'feed' ) ), 301 );
 				exit;
 			}
 
@@ -135,7 +138,7 @@ class Disable_Feeds {
 			$new_url = preg_replace( '#' . $struct . '/?$#', '', $requested_url );
 
 			if( $new_url != $requested_url ) {
-				wp_redirect( $new_url, 301 );
+				wp_safe_redirect( $new_url, 301 );
 				exit;
 			}
 		}
