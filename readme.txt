@@ -3,7 +3,7 @@ Contributors: solarissmoke
 Tags: disable, rss, atom, rdf, feeds
 Requires at least: 6.8.3
 Tested up to: 7.1.4
-Stable tag: 1.4.4.1
+Stable tag: 1.4.4.2
 Requires PHP: 8.3.28
 
 Disables all RSS/Atom/RDF feeds on your WordPress site.

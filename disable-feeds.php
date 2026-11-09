@@ -4,7 +4,7 @@ Plugin Name: Disable Feeds — Afterware
 Plugin URI: https://wordpress.org/plugins/disable-feeds/
 Update URI: https://updates.afterware.io/disable-feeds
 Description: Disable all RSS/Atom feeds on your WordPress site.
-Version: 1.4.4.1
+Version: 1.4.4.2
 Requires PHP: 8.3.28
 Requires at least: 6.8.3
 Author: Samir Shah, BBpress support by Matthew Sigley
